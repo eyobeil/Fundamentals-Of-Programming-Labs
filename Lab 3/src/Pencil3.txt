@@ -1,0 +1,57 @@
+﻿     Pencil And Paper Assignment For Lesson 3
+
+#1)
+class Account {
+    double balance;
+    Employee emp;
+    public void getBalance(){
+         return balance; 
+		 }
+		}
+Ans#a. Spaces between two lines of codes(ref#5. Indent nested code). 
+#1.(Ref#7) A right parenthesis ‘)’ or curly brace ‘}’ and any keyword that immediately
+follows, a keyword and any left parenthesis
+‘(’ or curly brace ‘{’ that immediately follows, or a right parenthesis ‘)’ and
+any left curly brace ‘{’ that immediately follows
+
+#2) 
+ boolean checkStatus() {
+  if(balance < 200.00 || hasOverdueFines() || 
+  (recentPayment < 30.00 && phoneIsDisconnected)) {
+     notifyCollections();
+       return false;
+            }
+    return true;
+}
+
+Ans# a. Ref#4. Document any deviations.and
+    b. Ref#6. Break up long lines
+
+#3)
+ class Company {
+    Employee[] employee;
+    public Employee[] getAllEmployees() {
+      return employee;
+    }
+  }
+Ans.Spaces between two lines of codes(ref#5. Indent nested code).
+
+#4)
+ class Department {
+   public double ComputeSalary(Employee emp) {
+         //Assume the methods used here really exist
+   String status = emp.getStatus();
+   double salary = checkSalary(status);
+   double bonus = checkBonus(emp);
+    return BaseSalary+Bonus;
+    }
+  }
+  
+Ans.a. Ref#9. Use meaningful names. 
+    b. Ref#22. Use lowercase for the first word and capitalize only 
+	the first letter of each subsequent word that appears in a method name. 
+#5.Customer and CustomerAccount would be of bank package because Customer gets service from the bank
+ and the CustometAccount is in the bank. On the same situation, Employee and Manager would be of package Company 
+because they both work in the company. Package combines all entities which rely on it.
+
+
